@@ -8,7 +8,12 @@
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">        
+        
+
+        
 
         @vite(['resources/scss/main.scss', 'resources/js/modal.js', 'resources/css/modal.css'])
         <!-- Styles -->
@@ -22,13 +27,20 @@
                 <ul>
                     <li><a href="">Over ons</a></li>
                     <li><a href="">Reserveren</a></li>
-                    <li><a href="">Powered by</a></li>
+                    <li>
+                        <a href="">Powered by 
+                            <img src="{{ asset('img/MBO-Logo 1.png') }}" alt="MBO Logo">
+                        </a>
+                    </li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Login</a></li>
                 </ul>
             </nav>
+            <img class="gif" src="{{ asset('img/summer walking GIF - Find & Share on GIPHY.gif') }}" alt="Gif">
+            <img class="Wave" src="{{ asset('designs/Wave.png') }}" alt="Wave">
         </header>
-        <section></section>
+        <section>
+</section>
         <footer></footer>
     </body>
 </html>
