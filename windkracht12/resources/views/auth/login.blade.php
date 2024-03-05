@@ -1,5 +1,5 @@
 <!-- styling -->
-@vite(['resources/scss/modal.scss'])
+@vite(['resources/js/modal.js'])
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -43,6 +43,7 @@
                 <a href="{{ route('register') }}" class="items-center ml-4 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Nog geen account?</a>
             @endif
         </div>
+
        
         <div class="flex items-center justify-end mt-4">
             @if (Route::has('password.request'))
