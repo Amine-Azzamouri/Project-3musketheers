@@ -11,22 +11,127 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oswald:wght@600&display=swap');
 
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #3B5B87;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/**.navcontainer {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  border: 0.2rem #A3BFD8 solid;
+  border-radius: 0.1rem;
+  justify-content: center;
+  align-items: center;
+  left: 5%;
+  top: 5%;
+  display: flex;
+  flex-direction: row;
+
+  .ctablock {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right:3.4rem;
+    padding-left: 3.4rem;
+    margin: 1rem;
+  }
+}*/
+
+
+
+header {
+  position: relative;
+}
+
+
+div {
+  padding: 0;
+  margin: 0;
+
+  .gif {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
+// ik moet even kijken hoe ik deze wave ga stylen. want er zit een onzichtbare lijn erover heen. ik ga denk ik proberen om een 
+// nieuwe img te importen zonder die onzichtbare lijn
+  .Wave {
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+}  
+
+
 nav {
   position: absolute;
-  inset: 0 0 auto 0;
-  background-color: v.g('bg');
-}
+  background-color: rgb(255, 255, 255);
+  inset: 2rem 1rem auto 1rem; 
+  width: calc(100% - 2rem);
+  border: solid #A3BFD8 6px;
+  border-radius: 4px;
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: clamp(100%, 50vh, 100vh);
-  overflow: hidden;
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0;
+    margin: 0;
+    
 
-  img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    z-index: -1;
+    li {
+
+      #windkrachtlogo{
+        position: absolute;
+        width: 50%;
+      }
+
+      padding: 0;
+      margin: 0;
+      border-left: 0.5px solid #454545; 
+      border-top: none; 
+      border-bottom: none; 
+
+      a {
+        padding: 0.5rem;
+        border-right: 1px solid #000;
+        text-decoration: none;
+        display: block;
+        justify-content: center;
+        text-align: center;
+
+        &:last-of-type {
+          border-right: none;
+        }
+
+        img {
+          position: absolute;
+          padding-left: 0.5rem;
+          top: 50%;
+          transform: translateY(-75%);
+          display: inline-block;
+          vertical-align: middle;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
   }
 }
+
+
+
+
+
