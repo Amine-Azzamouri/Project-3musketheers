@@ -10,7 +10,8 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">  
+        <link rel="shortcut icon" href="{{ asset('img/Windkracht-logo.png') }}" type="image/x-icon">      
         
 
         
@@ -27,7 +28,7 @@
                 <ul>
                     <li><a href="">Over ons</a></li>
                     <li><a href="">Reserveren</a></li>
-                    <li>
+                    <li id="windkrachtlogo">
                         <a href="">Powered by 
                             <img src="{{ asset('img/MBO-Logo 1.png') }}" alt="MBO Logo">
                         </a>
@@ -36,8 +37,10 @@
                     <li><a href="">Login</a></li>
                 </ul>
             </nav>
+            <div>
             <img class="gif" src="{{ asset('img/summer walking GIF - Find & Share on GIPHY.gif') }}" alt="Gif">
             <img class="Wave" src="{{ asset('designs/Wave.png') }}" alt="Wave">
+            </div>
         </header>
         <section>
 </section>
