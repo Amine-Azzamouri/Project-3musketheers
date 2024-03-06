@@ -39,7 +39,7 @@
             </nav>
             <div>
             <img class="gif" src="{{ asset('img/summer walking GIF - Find & Share on GIPHY.gif') }}" alt="Gif">
-            <img class="Wave" src="{{ asset('designs/Wave.png') }}" alt="Wave">
+            <img class="Wave" src="{{ asset('designs/Vector.svg') }}" alt="Wave">
             </div>
         </header>
         <section>
