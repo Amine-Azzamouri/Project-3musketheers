@@ -43,6 +43,11 @@
             </div>
         </header>
         <section>
+        <div class="vector">
+            <img id="block1" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
+            <img id="block2" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
+            <img id="block3" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
+            </div>
 </section>
         <footer></footer>
     </body>
