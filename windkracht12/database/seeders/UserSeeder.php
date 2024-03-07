@@ -25,8 +25,9 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
-            'password' => 'password',
-            'admin_roll' => 1
+            'password' => bcrypt('password'),
+            'role' => 'admin',
+            'status' => 'active'
         ]);
         /**
          * makes an instructor account 
@@ -35,8 +36,21 @@ class UserSeeder extends Seeder
             'name' => 'Instructor',
             'email' => 'instructor@gmail.com',
             'email_verified_at' => now(),
-            'password' => 'password',
-            'instructor_roll' => 1
+            'password' => bcrypt('password'),
+            'role' => 'instructor',
+            'status' => 'active'
+        ]);
+
+        /**
+         * makes an customer account 
+         */
+        User::create([
+            'name' => 'Customer',
+            'email' => 'customer@gmail.com',
+            'email_verified_at' => now(),
+            'password' => bcrypt('password'),
+            'role' => 'customer',
+            'status' => 'active'
         ]);
         /**
          * states when the seeder is done 

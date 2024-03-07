@@ -18,10 +18,19 @@
         </style>
         -->
     </head>
-    <body class="antialiased">
-
-            
-
-        
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="">Over ons</a></li>
+                    <li><a href="">Reserveren</a></li>
+                    <li><a href="">Powered by</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section></section>
+        <footer></footer>
     </body>
 </html>
