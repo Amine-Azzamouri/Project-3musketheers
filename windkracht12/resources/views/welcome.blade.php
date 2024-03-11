@@ -43,12 +43,26 @@
             </div>
         </header>
         <section>
-        <div class="vector">
-            <img id="block1" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
-            <img id="block2" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
-            <img id="block3" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
+            <div class="vector">
+                <img id="block1" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
+                <img id="block2" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
+                <img id="block3" src="{{ asset('designs/VectorDown.svg') }}" alt="vectorDown">
             </div>
-</section>
+            <div class="cards">
+                <div class="card">
+                    <h2>card1</h2>
+                    <p>test</p>
+                </div>
+                <div class="card">
+                <h2>card2</h2>
+                    <p>test</p>
+                </div>
+                <div class="card">
+                <h2>card3</h2>
+                    <p>test</p>
+                </div>
+            </div>
+        </section>
         <footer></footer>
     </body>
 </html>
