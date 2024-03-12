@@ -1,105 +1,44 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
 
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #dadada;
+}
 
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff;
+}
 
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
 
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
 
-div#buttons {
-    position: relative;
-    max-width: 800px;
-    padding-top: 3rem;
-    margin: 0 auto;
-    div.tabs {
-      display: flex;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3rem;
-      justify-content: space-evenly;
-      z-index: 2;
-      span.button-tab {
-       
-        position: relative;
-        height: 100%;
-        padding: 1rem;
-        text-align: center;
-        font-family: font.family('title');
-        color: #fff;
-        background-color: color.black(5);
-        border-color: color.white(5);
-        cursor: pointer;
-        flex: 1;
-        &.active {
-          background-color: darken($tc, 20%);
-          border-color: lighten($tc, 20%);
-          &:after {
-            
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: -1px;
-            width: 100%;
-            height: 1px;
-            background-color: darken($tc, 20%);
-          }
-        }
-  
-      }
-    }
-    div.button-group-tab {
-      @include transition.set(all);
-      position: relative;
-      width: 100%;
-      height: 0;
-      background-color: darken($tc, 20%);
-      opacity: 0;
-      pointer-events: none;
-      align-content: flex-start;
-      align-items: flex-start;
-      overflow: hidden;
-      z-index: 0;
-      &.active {
-       
-        height: fit-content;
-        margin: 0;
-        opacity: 1;
-        border-color: lighten($tc, 20%);
-        pointer-events: auto;
-        z-index: 1;
-      }
-      div.button {
-       
-        margin: 1rem 1rem;
-        align-items: flex-start;
-        align-content: flex-start;
-        transform: scale(1);
-        &:hover {
-          transform: scale(1.2);
-          a span { color: color.accent(5) }
-        }
-        a {
-          display: flex;
-          width: 4rem;
-          color: #efefef;
-          text-decoration: none;
-          text-align: center;
-          flex-direction: column;
-          align-items: center;
-          font-size: .8rem;
-          i {
-           
-            display: flex;
-            width: 3.5rem;
-            height: 3.5rem;
-            font-size: 1.8rem;
-            align-items: center;
-            justify-content: center;
-          }
-          span {
-            padding: .5rem 0;
-          }
-        }      
-      }
-    }
-  }
+.topright:hover {color: red;}

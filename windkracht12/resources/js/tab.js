@@ -1,40 +1,17 @@
-const tabButtons = document.querySelectorAll('span.button-tab')
-const tabs = document.querySelectorAll('div.button-group-tab')
-let timeoutId
-
-tabButtons.forEach(button => {
-  button.addEventListener('click', (e) => {
-    document.querySelector('span.button-tab.active').classList.remove('active')
-
-    let button = e.target,
-      targetGroup = button.getAttribute('data-target')
-
-    setHeight('div.button-group-tab#' + targetGroup)
-    button.classList.add('active')
-  })
-})
-
-function setHeight(target) {
-  const targetEl = document.querySelector(target)
-  let height = 0
-
-  document.querySelectorAll(target + '> *').forEach((el) => {
-    height = height + el.getBoundingClientRect().height
-  })
-
-  let activeGroup = document.querySelector('div.button-group-tab.active')
-
-  if (activeGroup) {
-    activeGroup.style.height = 0
-    activeGroup.classList.remove('active')
+window.tab = function(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-
-  if (timeoutId) {
-    clearTimeout(timeoutId)
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-
-  timeoutId = setTimeout(() => {
-    targetEl.style.height = 'calc(1rem + ' + height + 'px)'
-    targetEl.classList.add('active')
-  }, 500)
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
