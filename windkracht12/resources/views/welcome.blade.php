@@ -58,7 +58,7 @@
                                                 </div>
                                     
                                                 <div id="signup" class="tabcontent">
-                                                  @include('auth.register')
+                                                  @include('auth.invite')
                                                 </div>
                                     
                                             </div>
