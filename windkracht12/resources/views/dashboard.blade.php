@@ -9,7 +9,13 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
+                    @if(Auth::user()->admin_roll)
+                        {{ __("You're logged in as admin!") }}
+                    @elseif(Auth::user()->instructor_roll)
+                        {{ __("You're logged in as instructor!") }}
+                    @else
+                        {{ __("You're logged in as User!") }}
+                    @endif
                 </div>
             </div>
         </div>
