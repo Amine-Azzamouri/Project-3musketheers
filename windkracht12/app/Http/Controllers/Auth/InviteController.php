@@ -36,5 +36,7 @@ class InviteController extends Controller
         $this->success = true;
 
         UserUpdated::dispatch($invite);
+
+        return view('auth.verify-email');
     }
 }
