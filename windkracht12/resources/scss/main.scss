@@ -14,42 +14,15 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #3B5B87;
+  background-color: #E2ECF3;
   font-family: "Amatic SC", sans-serif;
   font-weight: 400;
   font-style: normal;
-
 }
-
-/**.navcontainer {
-  position: absolute;
-  width: 90%;
-  height: auto;
-  background-color: white;
-  border: 0.2rem #A3BFD8 solid;
-  border-radius: 0.1rem;
-  justify-content: center;
-  align-items: center;
-  left: 5%;
-  top: 5%;
-  display: flex;
-  flex-direction: row;
-
-  .ctablock {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right:3.4rem;
-    padding-left: 3.4rem;
-    margin: 1rem;
-  }
-}*/
-
-
 
 header {
   position: relative;
 }
-
 
 div {
   padding: 0;
@@ -61,8 +34,7 @@ div {
     height: 100vh;
     width: 100%;
   }
-// ik moet even kijken hoe ik deze wave ga stylen. want er zit een onzichtbare lijn erover heen. ik ga denk ik proberen om een 
-// nieuwe img te importen zonder die onzichtbare lijn
+
   .Wave {
     position: absolute;
     overflow: hidden;
@@ -73,7 +45,6 @@ div {
 }
 
 }  
-
 
 nav {
   position: absolute;
@@ -90,7 +61,6 @@ nav {
     padding: 0;
     margin: 0;
     
-
     li {
 
       #windkrachtlogo{
@@ -118,7 +88,7 @@ nav {
 
         img {
           position: absolute;
-          padding-left: 0.5rem;
+          padding: 0.5rem;
           top: 50%;
           transform: translateY(-75%);
           display: inline-block;
@@ -131,7 +101,212 @@ nav {
   }
 }
 
+section {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+    font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.vector {
+  position: absolute;
+  width: 100%;
+  height: auto;
 
+  img {
+    display: block;
+  }
 
+  #block1, #block2, #block3 {
+    position: absolute;
+    padding: 0;
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  #block1 {
+    margin-top: 16rem;
+  }
+
+  #block2 {
+    margin-top: 13rem;
+  }
+
+  #block3 {
+    margin-top: 10rem;
+  }
+}
+
+.cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    align-self: center;
+    justify-self: center; 
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    transform: scale(0.7);
+    overflow: visible;
+    box-shadow: 40px 40px 0px 0px #A3BFD8;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Amatic SC", sans-serif;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    border: 0px solid;
+    border-top-width: 1.5px;
+    border-bottom-width: 1.5px;
+    font-family: "Amatic SC", sans-serif;
+  }
+
+  p {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  
+  button {
+    width: 20rem;
+    height: 3rem;
+    padding: 5px;
+    border: 5px solid #3B5B87; /* Remove border */
+    border-radius: 2px; 
+    font-family: "Amatic SC", sans-serif;
+  }
+
+  button:hover {
+    background-color: transparent; /* Remove hover background color */
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .textcontainer {
+    width: 60%;
+    font-size: 1rem;
+    font-family: "Amatic SC", sans-serif;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: "Amatic SC", sans-serif;
+  }
+}
+
+.bannercontainer {
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  
+  }
+} 
+
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #404040;
+
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    align-items: center;
+    
+    li {
+      color: white;
+      font-size: 1.2rem; 
+      text-align: center; 
+    }
+  }
+
+  .bottomcontainer {
+    padding: 0;
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #262626;
+
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      margin: 0;
+      
+      li {
+        color: white;
+        font-size: 1.2rem; 
+        text-align: center; 
+        border: 1px solid #f00;
+        align-content: center;
+        justify-content: center;
+
+        img {;
+          max-height: auto;
+          object-fit: cover; 
+        }
+      }
+    }
+  }
+}
 
