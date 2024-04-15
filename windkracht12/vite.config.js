@@ -6,9 +6,11 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/scss/main.scss',
-                'resources/js/modal.css',
+                'resources/scss/tab.scss',
+                'resources/css/modal.css',
                 'resources/js/app.js',
-                'resources/js/modal.js'
+                'resources/js/modal.js',
+                'resources/js/tab.js'
             ],
             refresh: true,
         }),

@@ -15,12 +15,12 @@
   
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #CAE1F1;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    height: 14em;
-    width: 80%;
+    height: 35em;
+    width: 48%;
     border-radius: 10px;
   }
   
@@ -38,3 +38,13 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .wave {
+    position: relative;
+    height: 7em; 
+    width: 32em; 
+    bottom: -1em; 
+    left: -5em;
+  }
+  
+  

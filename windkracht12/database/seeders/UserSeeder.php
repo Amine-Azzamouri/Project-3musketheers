@@ -22,7 +22,8 @@ class UserSeeder extends Seeder
          * makes an admin account 
          */
         User::create([
-            'name' => 'Admin',
+            'firstname' => 'Admin',
+            'lastname' => 'Minnie',
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),
@@ -33,7 +34,8 @@ class UserSeeder extends Seeder
          * makes an instructor account 
          */
         User::create([
-            'name' => 'Instructor',
+            'firstname' => 'Instructor',
+            'lastname' => 'Instructors',
             'email' => 'instructor@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),
