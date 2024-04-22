@@ -21,7 +21,7 @@
     </head>
     <body>
         
-        <header>
+        <header> 
             <nav>
                 <ul>
                     <li><a href="">Over ons</a></li>
