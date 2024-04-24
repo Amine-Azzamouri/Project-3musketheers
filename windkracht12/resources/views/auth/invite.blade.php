@@ -2,7 +2,6 @@
     <form method="POST" action="verify-invite">
         @csrf
 
-        <label for="chk">Registreer</label>
        <!-- Name -->
        <div>
             <x-input-label for="firstname" :value="__('Firstname')" />

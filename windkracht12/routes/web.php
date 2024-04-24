@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\VerifyInviteController;
 use App\Http\Controllers\Auth\InviteController;
+use App\Http\Controllers\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,8 +39,7 @@ Route::post('/verify-invite', [InviteController::class, 'invite'])
 Route::get('/verify-invite/{code}', [VerifyInviteController::class, '__invoke']);
 
 // reservation route's
-Route::get('/reservation', function () {
-    return view('reservation.create');
-});
+Route::get('/reservation/create', [ReservationController::class, 'create'])->middleware('auth');
+Route::post('/reservation', [ReservationController::class, 'store'])->middleware('auth');
 
 require __DIR__ . '/auth.php';

@@ -47,7 +47,8 @@ class UserSeeder extends Seeder
          * makes an customer account 
          */
         User::create([
-            'name' => 'Customer',
+            'firstname' => 'Customer',
+            'lastname' => 'Customer',
             'email' => 'customer@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),

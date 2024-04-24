@@ -15,9 +15,8 @@
     <link rel="shortcut icon" href="{{ asset('img/Windkracht-logo.png') }}" type="image/x-icon">
 
     <!-- Styles -->
-    @vite(['resources/scss/main.scss', 'resources/scss/tab.scss', 'resources/scss/modal.scss', 'resources/scss/form.scss'])
-    <!-- scripts  -->
-    @vite(['resources/js/modal.js', 'resources/js/tab.js',])
+    @vite(['resources/scss/main.scss', 'resources/scss/tab.scss', 'resources/scss/modal.scss', 'resources/scss/form.scss', 'resources/css/app.css'])
+
 
 </head>
 
@@ -79,6 +78,7 @@
             <img class="Wave" src="{{ asset('designs/Vector.svg') }}" alt="Wave">
         </div>
 
+        <!-- registration form -->
         <div class="container form mt-6 px-6 py-4 overflow-hidden sm:rounded-lg">
             <div class="form-content w-full mt-6 px-6 py-4 bg-white overflow-hidden sm:rounded-lg">
                 {{ $slot }}
