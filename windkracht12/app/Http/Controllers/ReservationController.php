@@ -11,16 +11,20 @@ class ReservationController extends Controller
     // create reservation page
     public function create()
     {
+        // getting the authenticated user
         $user = Auth::user();
 
+        // returning the create reservation page
         return view('reservation.create', compact('user'));
     }
 
     // store reservation, saves data in the database
     public function store(Request $request)
     {
+        // getting the authenticated user
         $user = Auth::user();
 
+        // validation variable
         $validatedData = $request->validate([
             'phone_number' => 'required',
             'address' => 'required',
@@ -28,6 +32,7 @@ class ReservationController extends Controller
             'location' => 'required',
         ]);
 
+        // putting data in the database
         $reservation = new Reservation([
             'user_id' => $user->id,
             'phone_number' => $validatedData['phone_number'],
@@ -36,8 +41,10 @@ class ReservationController extends Controller
             'location' => $validatedData['location'],
         ]);
 
+        // saving data
         $reservation->save();
 
-        return redirect('/')->with('success', 'Reservation created successfully');
+        // redirecting to the create reservation page with a success message
+        return redirect('/reservation/create')->with('success', 'Reservation created successfully');
     }
 }
