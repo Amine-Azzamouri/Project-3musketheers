@@ -9,9 +9,10 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    @if(Auth::user()->admin_roll)
+
+                    @if(Auth::user()->role == 'admin')
                         {{ __("You're logged in as admin!") }}
-                    @elseif(Auth::user()->instructor_roll)
+                    @elseif(Auth::user()->role == 'instructor')
                         {{ __("You're logged in as instructor!") }}
                     @else
                         {{ __("You're logged in as User!") }}
