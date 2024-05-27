@@ -41,5 +41,6 @@ Route::get('/verify-invite/{code}', [VerifyInviteController::class, '__invoke'])
 // reservation route's
 Route::get('/reservation/create', [ReservationController::class, 'create'])->middleware('auth');
 Route::post('/reservation', [ReservationController::class, 'store'])->middleware('auth');
+Route::get('/reservation', [ReservationController::class, 'show'])->middleware('auth');
 
 require __DIR__ . '/auth.php';

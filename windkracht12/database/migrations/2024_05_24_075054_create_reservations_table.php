@@ -16,8 +16,9 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->string('phone_number');
             $table->string('address');
-            $table->integer('package');
+            $table->foreignId('package');
             $table->string('location');
+            $table->timestamp('payment')->nullable();
             $table->timestamps();
         });
 
@@ -26,6 +27,12 @@ return new class extends Migration
                 ->references('id')
                 ->on('users');
         });
+
+        Schema::table('reservations', function (Blueprint $table) {
+            $table->foreign('package')
+                ->references('id')
+                ->on('packages');
+        });
     }
 
     /**
@@ -33,6 +40,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reservations');
+       
     }
 };

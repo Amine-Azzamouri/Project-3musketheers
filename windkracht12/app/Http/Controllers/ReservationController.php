@@ -47,4 +47,17 @@ class ReservationController extends Controller
         // redirecting to the create reservation page with a success message
         return redirect('/reservation/create')->with('success', 'Reservation created successfully');
     }
+
+    // show reservation page
+    public function show()
+    {
+        // getting the authenticated user
+        $user = Auth::user();
+
+        // getting the user's reservations
+        $reservations = Reservation::where('user_id', $user->id)->get();
+
+        // returning the show reservation page
+        return view('reservation.show', compact('user', 'reservations'));
+    }
 }

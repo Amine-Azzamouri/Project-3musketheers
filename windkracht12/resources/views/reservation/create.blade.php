@@ -16,19 +16,19 @@
             @error('phone_number')
             <p class="error">{{ $message }}</p>
             @enderror
-            <input name="phone_number" type="text" placeholder="Telefoon Nummer" class="block mt-1 w-full">
+            <input name="phone_number" type="tel" max="15" placeholder="Telefoon Nummer" class="block mt-1 w-full">
             @error('address')
             <p class="error">{{ $message }}</p>
             @enderror
-            <input name="address" type="text" placeholder="Adres" class="block mt-1 w-full">
+            <input name="address" type="text" max="80" placeholder="Adres" class="block mt-1 w-full">
             @error('package')
             <p class="error">{{ $message }}</p>
             @enderror
-            <input name="package" type="text" placeholder="Pakket 1-2-3" class="block mt-1 w-full">
+            <input name="package" type="number" placeholder="Pakket 1-2-3-4" class="block mt-1 w-full">
             @error('location')
             <p class="error">{{ $message }}</p>
             @enderror
-            <input name="location" type="text" placeholder="Surf Locatie" class="block mt-1 w-full">
+            <input name="location" type="text" max="150" placeholder="Surf Locatie" class="block mt-1 w-full">
 
             <button type="submit" class="buttoncontainer">Verzend!</button>
         </div>
